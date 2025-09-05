@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: module_a_base
+      url-base: https://github.com/a741725193/zmk-corne-oled
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: module_a
+      remote: module_a_base
+      revision: main
   self:
     path: config
